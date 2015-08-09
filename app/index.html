@@ -59,7 +59,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
 
-    <paper-drawer-panel id="paperDrawerPanel">
+    <paper-drawer-panel id="paperDrawerPanel" force-narrow>
       <!-- Drawer Scroll Header Panel -->
       <paper-scroll-header-panel drawer fixed>
 
@@ -70,19 +70,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Drawer Content -->
         <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
-          <a data-route="home" href="/">
-            <iron-icon icon="home"></iron-icon>
-            <span>Home</span>
+          <a data-route="news" href="/">
+            <iron-icon icon="news-icon:news-icon"></iron-icon>
+            <span>News</span>
           </a>
 
-          <a data-route="users" href="/users">
+          <a data-route="clubs" href="/clubs">
             <iron-icon icon="club-icon:club-icon"></iron-icon>
             <span>Clubs</span>
           </a>
 
-          <a data-route="contact" href="/contact">
-            <iron-icon icon="mail"></iron-icon>
-            <span>Contact</span>
+          <a data-route="books" href="/books">
+            <iron-icon icon="book-icon:book-icon"></iron-icon>
+            <span>Books</span>
+          </a>
+
+          <a data-route="friends" href="/friends">
+            <iron-icon icon="friends-icon:friends-icon"></iron-icon>
+            <span>Friends</span>
+          </a>
+
+          <a data-route="calendar" href="/calendar">
+            <iron-icon icon="calendar-icon:calendar-icon"></iron-icon>
+            <span>Calendar</span>
+          </a>
+
+          <a data-route="settings" href="/settings">
+            <iron-icon icon="settings"></iron-icon>
+            <span>Settings</span>
           </a>
         </paper-menu>
       </paper-scroll-header-panel>
@@ -115,7 +130,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
-            <section data-route="home">
+            <section data-route="news">
               <paper-material elevation="1">
                 <my-greeting></my-greeting>
 
@@ -149,7 +164,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             </section>
 
-            <section data-route="users">
+            <section data-route="clubs">
               <paper-material elevation="1">
                 <h2 class="paper-font-display2">Users</h2>
                 <p>This is the users section</p>
@@ -166,7 +181,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </paper-material>
             </section>
 
-            <section data-route="contact">
+            <section data-route="books">
               <paper-material elevation="1">
                 <h2 class="paper-font-display2">Contact</h2>
                 <p>This is the contact section</p>
