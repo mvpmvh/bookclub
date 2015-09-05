@@ -1,0 +1,61 @@
+[
+    {
+        "type": "club",
+        "name": "Frank McCourt Fans",
+        "founder": "Paul Smith"
+    },
+    {
+        "type": "member",
+        "name": "Mario",
+        "club": "How We Got To Now"
+    },
+    {
+        "type": "comment",
+        "author": "John Doe",
+        "message": "Let's get together sometime?",
+        "club": "Recipes For Tomorrow"
+    },
+    {
+        "type": "comment",
+        "author": "Mary Anne",
+        "message": "When is everyone free?",
+        "club": "Recipes For Tomorrow"
+    },
+    {
+        "type": "like",
+        "detail": "Mario liked a comment."
+    },
+    {
+        "type": "post",
+        "author": "Arnold Peterman",
+        "message": "Meeting Suggestions",
+        "club": "The Thinkers & Tinkerers Society"
+    },
+    {
+        "type": "member",
+        "name": "Liz",
+        "club": "Yoga For The Brain"
+    },
+    {
+        "type": "comment",
+        "author": "Liz",
+        "message": "Can the next book we read be 'Group Think: Why It Always Fails, Sometimes' ?",
+        "club": "Yoga For The Brain"
+    },
+    {
+        "type": "comment",
+        "author": "Mary Anne",
+        "message": "What?",
+        "club": "Yoga For The Brain"
+    },
+    {
+        "type": "like",
+        "detail": "Liz liked a post."
+    },
+    {
+        "type": "post",
+        "author": "George",
+        "message": "What's a new book to read?",
+        "club": "Yoga For The Brain"
+    }
+]
