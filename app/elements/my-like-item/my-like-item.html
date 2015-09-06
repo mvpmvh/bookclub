@@ -27,13 +27,14 @@ Example:
         }
 
         paper-card {
+            cursor: pointer;
             background-color: sienna;
             margin: 10px;
         }
     </style>
 
     <template>
-        <paper-card>
+        <paper-card id="card">
             <div id="content">
                 <h3>{{data.detail}}</h3>
             </div>
@@ -58,11 +59,21 @@ Example:
                 },
 
                 listeners: {
-                    'tap': '_onItemTap'
+                    'tap': '_onItemTap',
+                    'mouseover': '_onItemMouseOver',
+                    'mouseout': '_onItemMouseOut'
                 },
 
                 _onItemTap: function(event) {
                     this.fire('item-tap', {item: this});
+                },
+
+                _onItemMouseOver: function(event) {
+                    this.$.card.elevation = 3;
+                },
+
+                _onItemMouseOut: function(event) {
+                    this.$.card.elevation = 1;
                 }
             });
         })();
