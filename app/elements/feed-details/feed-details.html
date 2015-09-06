@@ -1,0 +1,78 @@
+<dom-module id="feed-details">
+
+    <template>
+
+        <style>
+            #content {
+                height: 550px;
+                background-color: lightgreen;
+            }
+        </style>
+
+        <paper-material id="more_details">
+            <div id="content">
+                Some More Details...
+            </div>
+        </paper-material>
+
+    </template>
+
+    <script>
+        'use strict';
+
+        Polymer({
+            is: 'feed-details',
+
+            properties: {
+
+                color: {
+                    type: String,
+                    value: 'grey'
+                },
+
+                animationConfig: {
+                    value: function() {
+                        return {
+                            'entry': [{
+                                name: 'hero-animation',
+                                id: 'hero',
+                                toPage: this
+                            }],
+                            'exit': [{
+                                name: 'slide-right-animation',
+                                node: this
+                            }]
+                        }
+                    }
+                },
+
+                sharedElements: {
+                    value: function() {
+                        return {
+                            'hero': this.$.more_details
+                        }
+                    }
+                }
+            },
+
+            behaviors: [
+                Polymer.NeonSharedElementAnimatableBehavior
+            ],
+
+            listeners: {
+                'tap': '_onItemTap'
+            },
+
+            ready: function() {
+                this.$.more_details.style.color = this.color;
+                this.updateStyles();
+            },
+
+            _onItemTap: function(event) {
+                this.fire('detail-tap');
+            }
+        });
+
+    </script>
+
+</dom-module>
