@@ -25,21 +25,24 @@ Example:
         <style include="news-feed-card-theme"></style>
 
         <paper-card id="card" class="fancy">
-            <span class="card-header">
-                <span class="title">
-                    <span class="medium">{{data.club}}</span>
-                    <span class="small">{{data.time}}</span>
+            <span class="layout vertical">
+                <img src="{{data.image}}" class="main-image">
+
+                <span class="name-bar">
+                    <span class="big">{{data.author}}</span>
+                </span>
+
+                <span class="footer">
+                    Posted:<span class="big">{{data.message}}</span>
+                    <br><br/>
+                    <span class="title">
+                        <span class="medium">{{data.club}}</span>
+                        <br>
+                        <span class="small">{{data.time}}</span>
+                    </span>
                 </span>
             </span>
 
-            <div class="card-middle">
-                <span class="big">New Post</span>
-                <!--<img src="{{data.image}}">-->
-            </div>
-
-            <span class="card-footer">
-                <span class="big">{{data.name}}</span>
-            </span>
         </paper-card>
     </template>
 

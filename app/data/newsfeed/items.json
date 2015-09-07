@@ -2,9 +2,8 @@
     {
         "type": "club",
         "name": "Frank McCourt Fans!",
-        "founder": "Paul Smith",
-        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/enda/73.jpg",
-        "image": "../../data/newsfeed/images/books.png",
+        "founder": "Matthew",
+        "avatar": "../../data/newsfeed/images/matthew.jpg",
         "time": "8 hrs ago"
     },
     {
@@ -16,29 +15,33 @@
     },
     {
         "type": "comment",
-        "author": "John Doe",
+        "author": "Guest",
+        "image": "../../data/newsfeed/images/anonymous.jpg",
         "message": "Let's get together sometime?",
         "club": "Recipes For Tomorrow",
         "time": "1 wk ago"
     },
     {
         "type": "comment",
-        "author": "Mary Anne",
+        "author": "President Obama",
+        "image": "../../data/newsfeed/images/obama.jpg",
         "message": "When is everyone free?",
         "club": "Recipes For Tomorrow",
         "time": "1 wk ago"
     },
     {
         "type": "like",
-        "detail": "Mario liked a comment.",
+        "comment": "'I'm so glad we all enjoy reading the same things!'",
+        "image": "../../data/newsfeed/images/jordan.jpg",
         "club": "Readers International",
-        "author": "Mario",
+        "author": "M.J.",
         "time": "17 days ago"
     },
     {
         "type": "post",
-        "author": "Arnold Peterman",
+        "author": "Maya",
         "message": "Meeting Suggestions",
+        "image": "../../data/newsfeed/images/maya.jpg",
         "club": "The Thinkers & Tinkerers Society",
         "time": "Today 12:00pm CST"
     },
@@ -51,21 +54,25 @@
     },
     {
         "type": "comment",
-        "author": "Liz",
+        "author": "Shakira",
+        "image": "../../data/newsfeed/images/shakira.jpg",
         "message": "Can the next book we read be 'Group Think: Why It Always Fails, Sometimes' ?",
         "club": "Yoga For The Brain",
         "time": "Yesterday 3:15am EST"
     },
     {
         "type": "comment",
-        "author": "Mary Anne",
+        "author": "Jackie",
+        "image": "../../data/newsfeed/images/jackie.jpg",
         "message": "What?",
         "club": "Yoga For The Brain",
         "time": "2 hrs ago"
     },
     {
         "type": "like",
-        "detail": "Liz liked a post.",
+        "author": "Neil",
+        "image": "../../data/newsfeed/images/neil.jpg",
+        "comment": "Cosmos",
         "club": "Modern Science Fictioners",
         "time": "14 hrs ago"
     },
@@ -73,6 +80,7 @@
         "type": "post",
         "author": "George",
         "message": "What's a new book to read?",
+        "image": "../../data/newsfeed/images/george.jpg",
         "club": "Yoga For The Brain",
         "time": "1 yr ago"
     }

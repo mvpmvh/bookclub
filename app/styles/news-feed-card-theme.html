@@ -8,23 +8,21 @@
                 border-radius: 8px;
             }
 
-            .card-header {
-                align-items: flex-start;
+            .name-bar {
+                align-items: center;
+                background-color: var(--accent-color);
+                color: white;
                 display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: flex-start;
-                padding: 8px 8px 0px;
+                height: 40px;
+                width: 100%;
             }
 
-            .card-header .title {
-                display: flex;
-                flex-direction: column;
-                margin: 5px;
+            .footer {
+                padding: 6px 8px;
             }
 
-            .card-footer {
-                margin: 5px;
+            .footer > span:hover, div:hover {
+                text-decoration: underline;
             }
 
             .title {
@@ -35,36 +33,22 @@
                 text-decoration: underline;
             }
 
-            .avatar {
-                height: 64px;
-                width: 64px;
-            }
-
-            .avatar img {
-                width: 100%;
-                border-radius: 8px;
-            }
-
-            .card-middle {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .card-middle img {
+            .main-image {
+                border-radius: 8px 8px 0 0;
                 max-width: 300px;
-                max-height: 200px;
+                /*max-height: 200px;*/
             }
 
             .fancy .big {
                 font-size: 22px;
-                padding: 8px 0 16px;
+                padding: 2px 0 0 8px;
                 color: var(--google-black-500);
             }
 
             .fancy .medium {
                 font-size: 16px;
                 font-weight: bold;
+                /*padding: 2px 0 0 8px;*/
             }
 
             .fancy .small {
