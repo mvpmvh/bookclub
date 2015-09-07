@@ -103,27 +103,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </paper-scroll-header-panel>
 
         <!-- Main Area -->
-        <paper-scroll-header-panel main condenses keep-condensed-header>
+        <paper-header-panel main mode="waterfall">
 
             <!-- Main Toolbar -->
-            <paper-toolbar id="mainToolbar" class="tall">
-                <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
-                <span class="flex"></span>
+            <paper-toolbar id="mainToolbar">
+                <span class="left">
+                    <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+                    <span>Latest News</span>
+                    <!--<span class="medium">Read. Think. Share.</span>-->
+                </span>
 
-                <!-- Toolbar icons -->
-                <paper-icon-button icon="refresh"></paper-icon-button>
-                <paper-icon-button icon="search"></paper-icon-button>
+                <span class="mid">
+                    <iron-icon icon="search"></iron-icon>
+                    <input is="iron-input" placeholder="Search" class="search">
+                </span>
 
-                <!-- Application name -->
-                <div class="middle middle-container center horizontal layout">
-                    <div class="app-name">Book Club</div>
-                </div>
-
-                <!-- Application sub title -->
-                <div class="bottom bottom-container center horizontal layout">
-                    <div class="bottom-title paper-font-subhead">Read. Think. Share.</div>
-                </div>
-
+                <span class="right"></span>
             </paper-toolbar>
 
             <!-- Main Content -->
@@ -167,7 +162,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
                 </iron-pages>
             </div>
-        </paper-scroll-header-panel>
+        </paper-header-panel>
     </paper-drawer-panel>
 
     <!-- Uncomment next block to enable Service Worker support (1/2) -->

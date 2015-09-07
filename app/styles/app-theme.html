@@ -122,6 +122,48 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     transform-origin: left center;
   }
 
+  #mainToolbar .left {
+      display: flex;
+      flex: 1;
+      min-width: 250px;
+      align-items: center;
+  }
+
+  #mainToolbar .mid {
+      align-items: center;
+      background-color: rgba(255,255,255,0.16);
+      border-radius: 4px 0 0 4px;
+      display: flex;
+      flex: 2;
+      position: relative;
+      max-width: 600px;
+  }
+
+  #mainToolbar .search {
+      background-color: rgba(255,255,255,0.16);
+      transition: background-color 0.2s;
+      box-sizing: border-box;
+      height: 50px;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      text-indent: 8px;
+      outline: none;
+      width: 100%;
+  }
+
+  #mainToolbar .mid iron-icon {
+      /*background-color: #7683CB;*/
+      --iron-icon-width: 40px;
+  }
+
+  #mainToolbar .right {
+      display: flex;
+      flex: 1;
+  }
+
   /* Height of the scroll area */
   .content {
     height: 900px;
