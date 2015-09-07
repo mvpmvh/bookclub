@@ -70,7 +70,7 @@ Example:
                 },
 
                 _onItemTap: function(event) {
-                    this.fire('item-tap', {item: this});
+                    this.fire('item-tap', {item: this, data: this.data});
                 },
 
                 _onItemMouseOver: function(event) {

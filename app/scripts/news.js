@@ -8,8 +8,7 @@
     var app = document.querySelector('#app');
 
     app._onItemTap = function(event) {
-        //TODO: grab color from event
-        //full_details.color = 'lightgreen';
+        document.querySelector('#full_details').data = event.detail.data;
         document.querySelector('#pages').selected = 1;
     };
 

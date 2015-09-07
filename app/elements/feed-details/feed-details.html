@@ -3,16 +3,60 @@
     <template>
 
         <style>
-            #content {
-                height: 550px;
-                background-color: lightgreen;
+            .content {
+                background-color: var(--accent-color);
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                border-radius: 8px;;
+                cursor: pointer;
+            }
+
+            .image {
+                margin: 10px;
+            }
+
+            .image .profile {
+                border-radius: 8px;
+            }
+
+            .info {
+                margin: 10px;
+            }
+
+            .info .field {
+                padding: 8px;
+            }
+
+            .field .big {
+                font-size: 22px;
+            }
+
+            .field .medium {
+                font-size: 16px;
+                font-weight: bold;
             }
         </style>
 
         <paper-material id="more_details">
-            <div id="content">
-                Some More Details...
-            </div>
+            <span class="layout horizontal content">
+                <span id="pic" class="image">
+                    <img src="{{data.avatar}}" class="profile">
+                </span>
+
+                <span id="bio">
+                    <span class="layout vertical info">
+                        <span class="field">
+                            <span class="medium">Name:</span>
+                            <span class="big">Matthew McCaunaghy</span>
+                        </span>
+
+                        <span class="field">
+                            <span class="medium">Age:</span>
+                            <span class="big">43</span>
+                        </span>
+                    </span>
+                </span>
+            </span>
         </paper-material>
 
     </template>
@@ -25,22 +69,31 @@
 
             properties: {
 
-                color: {
-                    type: String,
-                    value: 'grey'
+                data: {
+                    type: Object,
+                    value: function() {
+                        return {}
+                    }
                 },
 
                 animationConfig: {
                     value: function() {
                         return {
                             'entry': [{
+                                name: 'cascaded-animation',
+                                animation: 'fade-in-animation',
+                                nodes: [this.$.bio, this.$.pic],
+                                timing: {delay: 500, duration: 2000}
+                            },
+                            {
                                 name: 'hero-animation',
                                 id: 'hero',
                                 toPage: this
                             }],
                             'exit': [{
-                                name: 'slide-right-animation',
-                                node: this
+                                name: 'hero-animation',
+                                id: 'hero',
+                                fromPage: this
                             }]
                         }
                     }
@@ -61,11 +114,6 @@
 
             listeners: {
                 'tap': '_onItemTap'
-            },
-
-            ready: function() {
-                this.$.more_details.style.color = this.color;
-                this.updateStyles();
             },
 
             _onItemTap: function(event) {
