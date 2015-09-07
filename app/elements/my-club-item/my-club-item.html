@@ -17,30 +17,32 @@ Example:
 
 @demo
 -->
+<link rel="import" href="../../styles/news-feed-card-theme.html">
+
 <dom-module id="my-club-item">
 
-    <style>
-        #content {
-            width: 300px;
-            min-height: 250px;
-            padding: 10px;
-        }
-
-        paper-card {
-            cursor: pointer;
-            background-color: lightgreen;
-            margin: 10px;
-        }
-    </style>
-
     <template>
-        <paper-card id="card">
-            <div id="content">
-                <h3>New Club!</h3>
-                <p>{{data.name}}</p>
-                <br>
-                --<span>{{data.founder}}</span>
+        <style include="news-feed-card-theme"></style>
+
+        <paper-card id="card" class="fancy">
+            <span class="card-header">
+                <span class="avatar">
+                    <img src="{{data.avatar}}">
+                </span>
+                <span class="title">
+                    <span class="medium">{{data.founder}}</span>
+                    <span class="small">{{data.time}}</span>
+                </span>
+            </span>
+
+            <div class="card-middle">
+                <span class="big">New Club</span>
+                <img src="{{data.image}}">
             </div>
+
+            <span class="card-footer">
+                <span class="big">{{data.name}}</span>
+            </span>
         </paper-card>
     </template>
 

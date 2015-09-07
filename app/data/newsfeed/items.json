@@ -1,61 +1,79 @@
 [
     {
         "type": "club",
-        "name": "Frank McCourt Fans",
-        "founder": "Paul Smith"
+        "name": "Frank McCourt Fans!",
+        "founder": "Paul Smith",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/enda/73.jpg",
+        "image": "../../data/newsfeed/images/books.png",
+        "time": "8 hrs ago"
     },
     {
         "type": "member",
-        "name": "Mario",
-        "club": "How We Got To Now"
+        "name": "Jennifer",
+        "club": "Acting For Dummies",
+        "image": "../../data/newsfeed/images/jennifer_lawrence.jpg",
+        "time": "2 days ago"
     },
     {
         "type": "comment",
         "author": "John Doe",
         "message": "Let's get together sometime?",
-        "club": "Recipes For Tomorrow"
+        "club": "Recipes For Tomorrow",
+        "time": "1 wk ago"
     },
     {
         "type": "comment",
         "author": "Mary Anne",
         "message": "When is everyone free?",
-        "club": "Recipes For Tomorrow"
+        "club": "Recipes For Tomorrow",
+        "time": "1 wk ago"
     },
     {
         "type": "like",
-        "detail": "Mario liked a comment."
+        "detail": "Mario liked a comment.",
+        "club": "Readers International",
+        "author": "Mario",
+        "time": "17 days ago"
     },
     {
         "type": "post",
         "author": "Arnold Peterman",
         "message": "Meeting Suggestions",
-        "club": "The Thinkers & Tinkerers Society"
+        "club": "The Thinkers & Tinkerers Society",
+        "time": "Today 12:00pm CST"
     },
     {
         "type": "member",
-        "name": "Liz",
-        "club": "Yoga For The Brain"
+        "name": "Will",
+        "club": "Yoga For The Brain",
+        "image": "../../data/newsfeed/images/will-smith.jpg",
+        "time": "2 wks ago"
     },
     {
         "type": "comment",
         "author": "Liz",
         "message": "Can the next book we read be 'Group Think: Why It Always Fails, Sometimes' ?",
-        "club": "Yoga For The Brain"
+        "club": "Yoga For The Brain",
+        "time": "Yesterday 3:15am EST"
     },
     {
         "type": "comment",
         "author": "Mary Anne",
         "message": "What?",
-        "club": "Yoga For The Brain"
+        "club": "Yoga For The Brain",
+        "time": "2 hrs ago"
     },
     {
         "type": "like",
-        "detail": "Liz liked a post."
+        "detail": "Liz liked a post.",
+        "club": "Modern Science Fictioners",
+        "time": "14 hrs ago"
     },
     {
         "type": "post",
         "author": "George",
         "message": "What's a new book to read?",
-        "club": "Yoga For The Brain"
+        "club": "Yoga For The Brain",
+        "time": "1 yr ago"
     }
 ]

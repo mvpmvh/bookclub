@@ -17,31 +17,29 @@ Example:
 
 @demo
 -->
+<link rel="import" href="../../styles/news-feed-card-theme.html">
+
 <dom-module id="my-post-item">
 
-    <style>
-        #content {
-            width: 300px;
-            min-height: 250px;
-            padding: 10px;
-        }
-
-        paper-card {
-            cursor: pointer;
-            background-color: orange;
-            margin: 10px;
-        }
-    </style>
-
     <template>
-        <paper-card id="card">
-            <div id="content">
-                <h3>New Post!</h3>
-                <p>{{data.message}}</p>
-                <p>{{data.club}}</p>
-                <br>
-                --<span>{{data.author}}</span>
+        <style include="news-feed-card-theme"></style>
+
+        <paper-card id="card" class="fancy">
+            <span class="card-header">
+                <span class="title">
+                    <span class="medium">{{data.club}}</span>
+                    <span class="small">{{data.time}}</span>
+                </span>
+            </span>
+
+            <div class="card-middle">
+                <span class="big">New Post</span>
+                <!--<img src="{{data.image}}">-->
             </div>
+
+            <span class="card-footer">
+                <span class="big">{{data.name}}</span>
+            </span>
         </paper-card>
     </template>
 
