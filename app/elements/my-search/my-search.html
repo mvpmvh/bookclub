@@ -1,0 +1,45 @@
+<dom-module id="my-search">
+    <template>
+
+        <style>
+            :host {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            .search-input {
+                @apply(--my-search-input);
+            }
+
+            #search-icon {
+                @apply(--my-search-icon);
+                --iron-icon-width: 40px;
+                padding: 13px 0;
+            }
+        </style>
+
+        <iron-icon id="search-icon" icon="search"></iron-icon>
+        <input is="iron-input" placeholder="Search" class="search-input">
+
+    </template>
+
+    <script>
+        'use strict';
+
+        //TODO: dynamically style the iron icon
+
+        Polymer({
+            is: 'my-search',
+
+            properties: {
+                iconSize: {
+                    type: Number,
+                    value: 40
+                }
+            }
+        });
+
+    </script>
+
+</dom-module>
