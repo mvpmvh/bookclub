@@ -163,6 +163,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       display: flex;
       flex: 1;
       justify-content: flex-end;
+      flex-wrap: wrap;
   }
 
   #mainToolbar .right iron-image {
@@ -171,6 +172,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       cursor: pointer;
       height:40px;
       width:40px;
+  }
+
+  #mainToolbar .right paper-item {
+      cursor: pointer;
+  }
+
+  #mainToolbar .right paper-item:hover {
+      background-color: var(--light-primary-color);
+  }
+
+  #mainToolbar .right paper-menu {
+  --paper-menu-selected-item: {
+       background-color: none;
+   };
   }
 
   /* Height of the scroll area */

@@ -119,7 +119,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </span>
 
                 <span class="right">
-                    <iron-image sizing="cover" preload fade src="http://lorempixel.com/600/400" placeholder="../../data/newsfeed/images/anonymous.jpg"></iron-image>
+                    <span>
+                        <paper-menu-button vertical-offset="55" horizontal-align="right" horizontal-offset="10">
+                            <iron-image class="dropdown-trigger" sizing="cover" preload fade src="http://lorempixel.com/600/400" placeholder="../../data/newsfeed/images/anonymous.jpg"></iron-image>
+                            <paper-menu class="dropdown-content">
+                                <span></span><!-- hack: put empty span element because Polymer highlights the 1st element by default! This would be confusing if you just want a plain dropdown menu -->
+                                <paper-item>Account</paper-item>
+                                <paper-item>Log Out</paper-item>
+                            </paper-menu>
+                        </paper-menu-button>
+                    </span>
                 </span>
             </paper-toolbar>
 
