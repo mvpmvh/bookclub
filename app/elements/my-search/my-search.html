@@ -20,7 +20,7 @@
         </style>
 
         <iron-icon id="search-icon" icon="search"></iron-icon>
-        <input is="iron-input" placeholder="Search" class="search-input">
+        <input is="iron-input" placeholder="{{placeHolder}}" class="search-input">
 
     </template>
 
@@ -36,6 +36,11 @@
                 iconSize: {
                     type: Number,
                     value: 40
+                },
+
+                placeHolder: {
+                    type: String,
+                    value: "Search"
                 }
             }
         });
