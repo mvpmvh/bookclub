@@ -13,37 +13,27 @@ An element providing a solution to no problem in particular.
 
 Example:
 
-    <my-club-item data="{'founder':'John Doe','name':'foo'}"></my-club-item>
+    <new-club-item data="{'founder':'John Doe','name':'foo'}"></new-club-item>
 
 @demo
 -->
 <link rel="import" href="../../styles/news-feed-card-theme.html">
 
-<dom-module id="my-club-item">
+<dom-module id="new-club-item">
 
     <template>
         <style include="news-feed-card-theme"></style>
 
-        <style>
-            .main-image {
-                height: 250px;
-            }
-
-            paper-card {
-                width: 250px;
-            }
-        </style>
-
         <paper-card id="card" class="fancy">
             <span class="layout vertical">
-                <img src="{{data.image}}" class="main-image">
+                <img src="{{data.avatar}}" class="main-image">
 
                 <span class="name-bar">
-                    <span class="big">{{data.name}}</span>
+                    <span class="big">{{data.founder}}</span>
                 </span>
 
                 <span class="footer">
-                    Created by <span class="medium">{{data.founder}}</span>
+                    Created <span class="medium">{{data.name}}</span>
                     <div class="small">{{data.time}}</div>
                 </span>
             </span>
@@ -54,7 +44,7 @@ Example:
         (function() {
             Polymer({
 
-                is: 'my-club-item',
+                is: 'new-club-item',
 
                 properties: {
 

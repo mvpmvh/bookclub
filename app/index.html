@@ -109,7 +109,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <paper-toolbar id="mainToolbar">
                 <span class="left">
                     <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
-                    <span>Latest News</span>
+                    <span>{{title}}</span>
                     <!--<span class="medium">Read. Think. Share.</span>-->
                 </span>
 
@@ -138,18 +138,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     <section data-route="news">
                         <neon-animated-pages id="pages" selected="0" on-feed-item-tap="_onItemTap">
                             <!-- TODO: adjust offset logic/height in order to not attempt 2 data fetches on page load -->
-                            <my-feed url="data/newsfeed/items.json" factory="news-item-factory" columns="4"></my-feed>
+                            <my-feed id="news_feed" url="data/newsfeed/items.json" factory="news-item-factory" columns="4"></my-feed>
                             <feed-details id="full_details" on-detail-tap="_onDetailsTap"></feed-details>
                         </neon-animated-pages>
                     </section>
 
                     <section data-route="clubs">
-                        <paper-material elevation="1">
-                            <h2 class="paper-font-display2">Users</h2>
+                        <h2>Club Invites</h2>
+                        <my-feed class="club_feed" url="data/clubfeed/invited.json" factory="club-item-factory" columns="5"></my-feed>
 
-                            <p>This is the users section</p>
-                            <a href="/users/Rob">Rob</a>
-                        </paper-material>
+                        <h2>My Clubs</h2>
+                        <my-feed class="club_feed" url="data/clubfeed/clubs.json" factory="club-item-factory" columns="5"></my-feed>
+
                     </section>
 
                     <section data-route="user-info">

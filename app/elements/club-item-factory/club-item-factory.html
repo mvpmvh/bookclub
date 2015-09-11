@@ -13,23 +13,19 @@ An element to create other registered elements.
 
 Example:
 
-    <news-item-factory></news-item-factory>
+    <club-item-factory></club-item-factory>
 
 @demo
 -->
-<dom-module id="news-item-factory">
+<dom-module id="club-item-factory">
 
     <script>
         (function() {
             Polymer({
-                is: "news-item-factory",
+                is: "club-item-factory",
 
                 _knownItems: {
-                    "club": "new-club-item",
-                    "comment": "my-comment-item",
-                    "like": "my-like-item",
-                    "member": "my-member-item",
-                    "post": "my-post-item"
+                    "club": "my-club-item"
                 },
 
                 createItem: function (item) {
