@@ -63,11 +63,11 @@
             "type": "comment",
             "comment": "Just finished MJ's biography. It is amazing!",
             "author": {
-                "id": 5,
+                "id": 4,
                 "name": "M.J."
             },
             "club": {
-                "id": 5,
+                "id": 3,
                 "name": "Sports Readers"
             }
         },
@@ -78,7 +78,7 @@
         "type": "post",
         "post": {
             "author": {
-                "id": 4,
+                "id": 5,
                 "name": "Maya"
             },
             "message": "Meeting Suggestions",
@@ -96,7 +96,7 @@
             "id": 6,
             "name": "Will",
             "club": {
-                "id": 6,
+                "id": 5,
                 "name": "Investing In Yourself"
             }
         },
@@ -107,11 +107,11 @@
         "type": "comment",
         "comment": {
             "author": {
-                "id": 4,
+                "id": 7,
                 "name": "Shakira"
             },
             "club": {
-                "id": 6,
+                "id": 5,
                 "name": "Investing In Yourself"
             },
             "message": "Can the next book we read be 'Group Think: Why It Always Fails, Sometimes' ?"
@@ -123,7 +123,7 @@
         "type": "comment",
         "comment": {
             "author": {
-                "id": 7,
+                "id": 8,
                 "name": "Jackie"
             },
             "club": {
@@ -141,11 +141,11 @@
             "type": "comment",
             "comment": "Cosmos",
             "author": {
-                "id": 8,
+                "id": 9,
                 "name": "Neil"
             },
             "club": {
-                "id": 7,
+                "id": 6,
                 "name": "Modern Science Fictioners"
             }
         },
@@ -156,12 +156,12 @@
         "type": "post",
         "post": {
             "author": {
-                "id": 8,
+                "id": 10,
                 "name": "George"
             },
             "message": "What's a new book to read?",
             "club": {
-                "id": 8,
+                "id": 5,
                 "name": "Investing In Yourself"
             }
         },
