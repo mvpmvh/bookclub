@@ -25,20 +25,18 @@ Example:
     <template>
         <paper-card id="card" class="fancy">
             <span class="layout vertical">
-                <img src="{{data.image}}" class="main-image">
+                <img src="{{data.image}}" class="main-image" on-tap="_onProfileTap">
 
-                <span class="name-bar">
-                    <div class="big">{{data.author}}</div>
+                <span class="name-bar" on-tap="_onProfileTap">
+                    <div class="big">{{data.like.author.name}}</div>
                 </span>
 
                 <span class="footer">
-                    Liked:<span class="big">{{data.comment}}</span>
+                    Liked:<span class="big">{{data.like.comment}}</span>
                     <br><br/>
-                    <span class="title">
-                        <span class="medium">{{data.club}}</span>
-                        <br>
-                        <span class="small">{{data.time}}</span>
-                    </span>
+                    <span class="medium title" on-tap="_onClubTap">{{data.like.club.name}}</span>
+                    <br>
+                    <span class="small">{{data.time}}</span>
                 </span>
             </span>
         </paper-card>
@@ -62,13 +60,17 @@ Example:
                 },
 
                 listeners: {
-                    'tap': '_onItemTap',
+                    'tap': '_onProfileTap',
                     'mouseover': '_onItemMouseOver',
                     'mouseout': '_onItemMouseOut'
                 },
 
-                _onItemTap: function(event) {
-                    this.fire('item-tap', {item: this, data: this.data});
+                _onProfileTap: function (event) {
+                    this.fire('item-tap', {type: "profile", id: this.data.like.author.id});
+                },
+
+                _onClubTab: function(event) {
+                    this.fire('item-tap', {type: "club", id: this.data.like.club.id});
                 },
 
                 _onItemMouseOver: function(event) {

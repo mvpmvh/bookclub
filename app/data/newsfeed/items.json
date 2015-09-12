@@ -1,87 +1,171 @@
 [
     {
         "type": "club",
-        "name": "Frank McCourt Fans!",
-        "founder": "Matthew",
-        "avatar": "../../data/newsfeed/images/matthew.jpg",
+        "club": {
+            "id": 0,
+            "name": "Yoga For The Mind",
+            "founder": {
+                "id": 0,
+                "name": "Matthew"
+            }
+        },
+        "image": "../../../images/matthew.jpg",
         "time": "8 hrs ago"
     },
     {
         "type": "member",
-        "name": "Jennifer",
-        "club": "Acting For Dummies",
-        "image": "../../data/newsfeed/images/jennifer_lawrence.jpg",
+        "member": {
+            "id": 1,
+            "name": "Jennifer",
+            "club": {
+                "id": 1,
+                "name": "Acting For Dummies"
+            }
+        },
+        "image": "../../../images/jennifer_lawrence.jpg",
         "time": "2 days ago"
     },
     {
         "type": "comment",
-        "author": "Guest",
-        "image": "../../data/newsfeed/images/anonymous.jpg",
-        "message": "Let's get together sometime?",
-        "club": "Recipes For Tomorrow",
+        "comment": {
+            "author": {
+                "id": 2,
+                "name": "Guest"
+            },
+            "message": "Let's get together sometime?",
+            "club": {
+                "id": 2,
+                "name": "Recipes For Everybody"
+            }
+        },
+        "image": "../../../images/anonymous.jpg",
         "time": "1 wk ago"
     },
     {
         "type": "comment",
-        "author": "President Obama",
-        "image": "../../data/newsfeed/images/obama.jpg",
-        "message": "When is everyone free?",
-        "club": "Recipes For Tomorrow",
+        "comment": {
+            "author": {
+                "id": 3,
+                "name": "President Obama"
+            },
+            "message": "When is everyone free?",
+            "club": {
+                "id": 2,
+                "name": "Recipes For Everybody"
+            }
+        },
+        "image": "../../../images/obama.jpg",
         "time": "1 wk ago"
     },
     {
         "type": "like",
-        "comment": "'I'm so glad we all enjoy reading the same things!'",
-        "image": "../../data/newsfeed/images/jordan.jpg",
-        "club": "Readers International",
-        "author": "M.J.",
+        "like": {
+            "type": "comment",
+            "comment": "Just finished MJ's biography. It is amazing!",
+            "author": {
+                "id": 5,
+                "name": "M.J."
+            },
+            "club": {
+                "id": 5,
+                "name": "Sports Readers"
+            }
+        },
+        "image": "../../../images/jordan.jpg",
         "time": "17 days ago"
     },
     {
         "type": "post",
-        "author": "Maya",
-        "message": "Meeting Suggestions",
-        "image": "../../data/newsfeed/images/maya.jpg",
-        "club": "The Thinkers & Tinkerers Society",
+        "post": {
+            "author": {
+                "id": 4,
+                "name": "Maya"
+            },
+            "message": "Meeting Suggestions",
+            "club": {
+                "id": 4,
+                "name": "Poetry For The Soul"
+            }
+        },
+        "image": "../../../images/maya.jpg",
         "time": "Today 12:00pm CST"
     },
     {
         "type": "member",
-        "name": "Will",
-        "club": "Yoga For The Brain",
-        "image": "../../data/newsfeed/images/will-smith.jpg",
+        "member": {
+            "id": 6,
+            "name": "Will",
+            "club": {
+                "id": 6,
+                "name": "Investing In Yourself"
+            }
+        },
+        "image": "../../../images/will-smith.jpg",
         "time": "2 wks ago"
     },
     {
         "type": "comment",
-        "author": "Shakira",
-        "image": "../../data/newsfeed/images/shakira.jpg",
-        "message": "Can the next book we read be 'Group Think: Why It Always Fails, Sometimes' ?",
-        "club": "Yoga For The Brain",
-        "time": "Yesterday 3:15am EST"
+        "comment": {
+            "author": {
+                "id": 4,
+                "name": "Shakira"
+            },
+            "club": {
+                "id": 6,
+                "name": "Investing In Yourself"
+            },
+            "message": "Can the next book we read be 'Group Think: Why It Always Fails, Sometimes' ?"
+        },
+        "image": "../../../images/shakira.jpg",
+        "time": "Yesterday 3:15am CST"
     },
     {
         "type": "comment",
-        "author": "Jackie",
-        "image": "../../data/newsfeed/images/jackie.jpg",
-        "message": "What?",
-        "club": "Yoga For The Brain",
+        "comment": {
+            "author": {
+                "id": 7,
+                "name": "Jackie"
+            },
+            "club": {
+                "id": 5,
+                "name": "Investing In Yourself"
+            },
+            "message": "What?"
+        },
+        "image": "../../../images/jackie.jpg",
         "time": "2 hrs ago"
     },
     {
         "type": "like",
-        "author": "Neil",
-        "image": "../../data/newsfeed/images/neil.jpg",
-        "comment": "Cosmos",
-        "club": "Modern Science Fictioners",
+        "like": {
+            "type": "comment",
+            "comment": "Cosmos",
+            "author": {
+                "id": 8,
+                "name": "Neil"
+            },
+            "club": {
+                "id": 7,
+                "name": "Modern Science Fictioners"
+            }
+        },
+        "image": "../../../images/neil.jpg",
         "time": "14 hrs ago"
     },
     {
         "type": "post",
-        "author": "George",
-        "message": "What's a new book to read?",
-        "image": "../../data/newsfeed/images/george.jpg",
-        "club": "Yoga For The Brain",
+        "post": {
+            "author": {
+                "id": 8,
+                "name": "George"
+            },
+            "message": "What's a new book to read?",
+            "club": {
+                "id": 8,
+                "name": "Investing In Yourself"
+            }
+        },
+        "image": "../../../images/george.jpg",
         "time": "1 yr ago"
     }
 ]

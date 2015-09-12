@@ -26,14 +26,14 @@ Example:
 
         <paper-card id="card" class="fancy">
             <span class="layout vertical">
-                <img src="{{data.avatar}}" class="main-image">
+                <img src="{{data.image}}" class="main-image" on-tap="_onProfileTap">
 
-                <span class="name-bar">
-                    <span class="big">{{data.founder}}</span>
+                <span class="name-bar" on-tap="_onProfileTap">
+                    <span class="big">{{data.club.founder.name}}</span>
                 </span>
 
                 <span class="footer">
-                    Created <span class="medium">{{data.name}}</span>
+                    Created: <span class="medium title" on-tap="_onClubTab">{{data.club.name}}</span>
                     <div class="small">{{data.time}}</div>
                 </span>
             </span>
@@ -60,13 +60,17 @@ Example:
                 },
 
                 listeners: {
-                    'tap': '_onItemTap',
+                    'tap': '_onProfileTap',
                     'mouseover': '_onItemMouseOver',
                     'mouseout': '_onItemMouseOut'
                 },
 
-                _onItemTap: function (event) {
-                    this.fire('item-tap', {item: this, data: this.data});
+                _onProfileTap: function (event) {
+                    this.fire('item-tap', {type: "profile", id: this.data.club.founder.id});
+                },
+
+                _onClubTab: function(event) {
+                    this.fire('item-tap', {type: "club", id: this.data.club.id});
                 },
 
                 _onItemMouseOver: function(event) {
