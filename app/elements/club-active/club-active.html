@@ -1,0 +1,34 @@
+<dom-module id="club-active">
+
+    <style>
+        .club_feed {
+        --scroll-up-style: {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             justify-content: flex-start;
+             height: 100%;
+         };
+        }
+    </style>
+
+    <template>
+        <h2>My Clubs</h2>
+        <my-feed class="club_feed" url="../../data/clubfeed/clubs.json" factory="club-item-factory" columns="5"></my-feed>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'club-active',
+
+            listeners: {
+                'feed-item-tap': '_onItemTap'
+            },
+
+            _onItemTap: function(event) {
+                this.fire('club-item-tap', {type: "active", id: event.detail.data.id});
+            }
+        });
+    </script>
+
+</dom-module>

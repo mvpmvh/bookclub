@@ -143,22 +143,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         </neon-animated-pages>
                     </section>
 
-                    <section data-route="clubs">
-                        <h2>Club Invites</h2>
-                        <my-feed class="club_feed" url="data/clubfeed/invited.json" factory="club-item-factory" columns="5"></my-feed>
-
-                        <h2>My Clubs</h2>
-                        <my-feed class="club_feed" url="data/clubfeed/clubs.json" factory="club-item-factory" columns="5"></my-feed>
-
+                    <section data-route="clubs" on-club-item-tap="_onClubItemTap">
+                        <club-invites></club-invites>
+                        <club-active></club-active>
                     </section>
 
-                    <section data-route="user-info">
+                    <section data-route="club-info">
                         <paper-material elevation="1">
                             <h2 class="paper-font-display2">
-                                User:<span>{{params.name}}</span>
+                                Id:<span>{{params.id}}</span>
                             </h2>
 
-                            <div>This is <span>{{params.name}}</span>'s section</div>
+                            <div>This is <span>{{params.type}}</span>'s section</div>
                         </paper-material>
                     </section>
 
@@ -197,6 +193,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <!-- build:js scripts/app.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/news.js"></script>
+<script src="scripts/clubs.js"></script>
 <!-- endbuild-->
 </body>
 

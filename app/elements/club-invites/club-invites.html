@@ -1,0 +1,38 @@
+<dom-module id="club-invites">
+
+    <style>
+        .club_feed {
+        --scroll-up-style: {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             justify-content: flex-start;
+             height: 100%;
+         };
+        }
+
+    </style>
+
+    <template>
+        <h2>Club Invites</h2>
+        <my-feed class="club_feed" url="../../data/clubfeed/invited.json" factory="club-item-factory" columns="5"></my-feed>
+    </template>
+
+    <script>
+        'use strict';
+
+        Polymer({
+            is: 'club-invites',
+
+            listeners: {
+                'feed-item-tap': '_onItemTap'
+            },
+
+            _onItemTap: function(event) {
+                console.log('invite tapped');
+                this.fire('club-item-tap', {type: "invite", id: event.detail.data.id});
+            }
+        });
+    </script>
+
+</dom-module>

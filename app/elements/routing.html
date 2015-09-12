@@ -35,6 +35,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             app.title = 'My Clubs'
         });
 
+        page('/clubs/:type/:id', function(data) {
+            app.route = 'club-info';
+            app.params = data.params;
+        });
+
         // add #! before urls
         page({
             hashbang: true
