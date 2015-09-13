@@ -1,0 +1,123 @@
+[
+    {
+        "id": 0,
+        "name": "Matthew McConaughey",
+        "image": "../../../images/matthew.jpg",
+        "clubs": [
+            {
+                "id": 0,
+                "name": "Frank McCourt Fans!"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Jennifer Lawrence",
+        "image": "../../../images/jennifer_lawrence.jpg",
+        "clubs": [
+            {
+                "id": 1,
+                "name": "Acting For Dummies"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Guest",
+        "image": "../../../images/anonymous.jpg",
+        "clubs": [
+            {
+                "id": 2,
+                "name": "Recipes For Tomorrow"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "President Obama",
+        "image": "../../../images/obama.jpg",
+        "clubs": [
+            {
+                "id": 2,
+                "name": "Recipes For Tomorrow"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Michael Jordan",
+        "image": "../../../images/jordan.jpg",
+        "clubs": [
+            {
+                "id": 3,
+                "name": "Readers International"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Maya Angelou",
+        "image": "../../../images/maya.jpg",
+        "clubs": [
+            {
+                "id": 4,
+                "name": "Thinkers & Tinkerers Society"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Will Smith",
+        "image": "../../../images/will-smith.jpg",
+        "clubs": [
+            {
+                "id": 5,
+                "name": "Yoga For The Brain"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Shakira",
+        "image": "../../../images/shakira.jpg",
+        "clubs": [
+            {
+                "id": 6,
+                "name": "Yoga For The Brain"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Jackie Chan",
+        "image": "../../../images/jackie.jpg",
+        "clubs": [
+            {
+                "id": 6,
+                "name": "Yoga For The Brain"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Neil DeGrasse Tyson",
+        "image": "../../../images/neil.jpg",
+        "clubs": [
+            {
+                "id": 7,
+                "name": "Modern Science Fictioners"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "George Takei",
+        "image": "../../../images/george.jpg",
+        "clubs": [
+            {
+                "id": 6,
+                "name": "Yoga For The Brain"
+            }
+        ]
+    }
+]
