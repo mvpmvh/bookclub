@@ -120,7 +120,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <span class="right">
                     <span>
                         <paper-menu-button vertical-offset="55" horizontal-align="right" horizontal-offset="10">
-                            <iron-image class="dropdown-trigger" sizing="cover" preload fade src="http://lorempixel.com/600/400" placeholder="../../data/newsfeed/images/anonymous.jpg"></iron-image>
+                            <iron-image class="dropdown-trigger" sizing="cover" preload fade src="http://lorempixel.com/600/400" placeholder="../../images/anonymous.jpg"></iron-image>
                             <paper-menu class="dropdown-content">
                                 <span></span><!-- hack: put empty span element because Polymer highlights the 1st element by default! This would be confusing if you just want a plain dropdown menu -->
                                 <paper-item>Account</paper-item>
@@ -136,10 +136,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
                     <section data-route="news">
-                        <neon-animated-pages id="pages" selected="0" on-feed-item-tap="_onItemTap">
+                        <neon-animated-pages id="news_pages" selected="0" on-feed-item-tap="_onItemTap">
                             <!-- TODO: adjust offset logic/height in order to not attempt 2 data fetches on page load -->
                             <my-feed id="news_feed" url="data/newsfeed/items.json" factory="news-item-factory" columns="4"></my-feed>
-                            <feed-details id="full_details" on-detail-tap="_onDetailsTap"></feed-details>
+                            <feed-details id="news_details" on-detail-tap="_onDetailsTap"></feed-details>
                         </neon-animated-pages>
                     </section>
 

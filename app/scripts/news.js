@@ -8,12 +8,21 @@
     var app = document.querySelector('#app');
 
     app._onItemTap = function(event) {
-        document.querySelector('#full_details').data = event.detail.data;
-        document.querySelector('#pages').selected = 1;
+        var type_url_map = {
+            "club-invite": "../data/clubfeed/invited.json",
+            "club-active": "../data/clubfeed/clubs.json",
+            "profile": "../../../data/profiles/profiles.json"
+        };
+
+        var news_details = document.querySelector('#news_details');
+        news_details.url = type_url_map[event.detail.type];
+        news_details.index = event.detail.id;
+
+        document.querySelector('#news_pages').selected = 1;
     };
 
-    app._onDetailsTap = function(event) {
-        document.querySelector('#pages').selected = 0;
+    app._onDetailsTap = function() {
+        document.querySelector('#news_pages').selected = 0;
     };
 
 })(document);

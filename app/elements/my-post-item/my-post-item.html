@@ -69,11 +69,11 @@ Example:
                 },
 
                 _onProfileTap: function (event) {
-                    this.fire('item-tap', {type: "profile", id: this.data.post.author.id});
+                    this.fire('item-tap', {item: this, type: "profile", id: this.data.post.author.id});
                 },
 
                 _onClubTab: function(event) {
-                    this.fire('item-tap', {type: "club", id: this.data.post.club.id});
+                    this.fire('item-tap', {item: this, type: "club", id: this.data.post.club.id});
                 },
 
                 _onItemMouseOver: function(event) {

@@ -58,17 +58,16 @@ Example:
                 },
 
                 listeners: {
-                    'tap': '_onProfileTap',
                     'mouseover': '_onItemMouseOver',
                     'mouseout': '_onItemMouseOut'
                 },
 
                 _onProfileTap: function (event) {
-                    this.fire('item-tap', {type: "profile", id: this.data.member.id});
+                    this.fire('item-tap', {item: this, type: "profile", id: this.data.member.id});
                 },
 
                 _onClubTab: function(event) {
-                    this.fire('item-tap', {type: "club", id: this.data.member.club.id});
+                    this.fire('item-tap', {item: this, type: "club", id: this.data.member.club.id});
                 },
 
                 _onItemMouseOver: function(event) {

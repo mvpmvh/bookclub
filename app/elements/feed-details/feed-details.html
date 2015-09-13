@@ -37,22 +37,27 @@
             }
         </style>
 
+        <iron-ajax id="ia" url="{{url}}" handle-as="json" on-response="_handleResponse"></iron-ajax>
+
         <paper-material id="more_details">
             <span class="layout horizontal content">
                 <span id="pic" class="image">
-                    <img src="{{data.avatar}}" class="profile">
+                    <img src="{{data.image}}" class="profile">
                 </span>
 
                 <span id="bio">
                     <span class="layout vertical info">
                         <span class="field">
                             <span class="medium">Name:</span>
-                            <span class="big">Matthew McCaunaghy</span>
+                            <span class="big">{{data.name}}</span>
                         </span>
 
                         <span class="field">
-                            <span class="medium">Age:</span>
-                            <span class="big">43</span>
+                            <span class="medium">About:</span>
+                            <span class="big">Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.
+                                Ut labores minimum atomorum pro. Laudem tibique ut has.Convenire definiebas scriptorem eu cum.
+                                Sit dolor dicunt consectetuer no.Pro saepe pertinax ei, ad pri animal labores suscipiantur.
+                            </span>
                         </span>
                     </span>
                 </span>
@@ -74,6 +79,15 @@
                     value: function() {
                         return {}
                     }
+                },
+
+                url: {
+                    type: String
+                },
+
+                index: {
+                    type: String,
+                    observer: '_refreshData'
                 },
 
                 animationConfig: {
@@ -118,6 +132,20 @@
 
             _onItemTap: function(event) {
                 this.fire('detail-tap');
+            },
+
+            _handleResponse: function() {
+                var details = this.$.ia.lastResponse;
+
+                if(Array.isArray(details)) {
+                    this.data = details[this.index];
+                }
+            },
+
+            _refreshData: function(newIndex, oldIndex) {
+                if(newIndex != undefined) {
+                    this.$.ia.generateRequest();
+                }
             }
         });
 
