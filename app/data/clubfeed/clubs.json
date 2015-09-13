@@ -1,29 +1,30 @@
 [
     {
+        "id": 0,
         "name": "Relaxing Reads",
         "image": "data/clubfeed/images/lazyboy.png",
         "founder": "Nguyen",
         "time": "Jul 25 2015",
         "type": "club"
     },
-
     {
+        "id": 1,
         "name": "Young Adults Only",
         "image": "data/clubfeed/images/heartbreak.png",
         "founder": "Erik Meier",
         "time": "Sept 01 2015",
         "type": "club"
     },
-
     {
+        "id": 2,
         "name": "Space Readers",
         "image": "data/clubfeed/images/space.png",
         "founder": "Reem",
         "time": "Dec 01 2014",
         "type": "club"
     },
-
     {
+        "id": 3,
         "name": "Music Lovers",
         "image": "data/clubfeed/images/record.png",
         "founder": "Gene",

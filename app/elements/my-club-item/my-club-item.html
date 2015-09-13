@@ -76,7 +76,7 @@ Example:
                 },
 
                 _onItemTap: function (event) {
-                    this.fire('item-tap', {item: this, data: this.data});
+                    this.fire('item-tap', {item: this, type: "club", id: this.data.id});
                 },
 
                 _onItemMouseOver: function(event) {

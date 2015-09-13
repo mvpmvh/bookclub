@@ -29,8 +29,7 @@
             },
 
             _onItemTap: function(event) {
-                console.log('invite tapped');
-                this.fire('club-item-tap', {type: "invite", id: event.detail.data.id});
+                this.fire('club-item-tap', {type: "invite", id: event.detail.id});
             }
         });
     </script>
